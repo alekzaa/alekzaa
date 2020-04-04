@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kosmos</title>
+<link type="text/css" rel="stylesheet" href="ceeses.css"/>
+</head>
+
+<body>
+    <header>
+    <nav>
+    <ul>
+        <li><a href="index.html">Strona Główna</a></li>
+        <li class="selected">Kosmos</li>
+        <li><a href="słońce.html">Słońce</a></li>
+        <li><a href="planety.html">Planety</a></li>
+        <li><a href="planety-karłowate.html">Planety Karłowate</a></li>
+        </ul>
+    </nav>
+    </header>
+    <nav>
+        <h1>Kosmos</h1>
+        </nav>
+<p><strong>Kosmos</strong> to synonim wszechświata, oznacza przestrzeń kosmiczną.
+    <strong>Układ Słoneczny</strong>, w którym aktualnie się znajdujemy należy do galaktyki <strong>Drogi Mlecznej</strong>. Na dzień dzisiejszy wiadomo nam, 
+    że kosmos to nieskończona wielkość jak i nieskończona małość, co dla niektórych może się wydawać dość absurdalnym stwierdzeniem, 
+    lecz jest to w stu procentach prawda.</p>
+    <img id="display-image" onclick="swapImage()" src="drogamleczna.jpg" width="725" height="385"/>
+<p><i>Kliknij obrazek, aby go zmienić!</i></p>
+<script>
+function swapImage() {
+    var imageDisplayed = document.getElementById ('display-image');
+    if (imageDisplayed.src.match("drogamleczna.jpg")) {
+        imageDisplayed.src = "kosmos.jpg";
+    }
+    else {
+        imageDisplayed.src = "drogamleczna.jpg";
+    }
+}
+</script>
+</body>
+</html>
